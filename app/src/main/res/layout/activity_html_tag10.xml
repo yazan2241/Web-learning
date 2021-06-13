@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".html_tag10">
+
+
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="HTML Links"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Hyperlinks"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="You can click on a link and jump to another document.&#x0A;
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand."
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="syntax"
+
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t1111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/hyperLinkEx"
+                app:layout_constraintTop_toBottomOf="@+id/t111"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t1111"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Local Links"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="A local link (link to the same web site)"
+                app:layout_constraintTop_toBottomOf="@+id/t2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t22"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/localLinkEx"
+                app:layout_constraintTop_toBottomOf="@+id/t222"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t2222"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="HTML Link Colors"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="a link will appear like this (in all browsers):&#x0A;
+
+An unvisited link is underlined and blue&#x0A;
+A visited link is underlined and purple&#x0A;
+An active link is underlined and red&#x0A;
+You can change the default colors, by using CSS:"
+                app:layout_constraintTop_toBottomOf="@+id/t3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t33"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/colorLinkEx"
+                app:layout_constraintTop_toBottomOf="@+id/t333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t3333"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="The target Attribute"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkTarget"
+                app:layout_constraintTop_toBottomOf="@+id/t4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t44"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkTargetEx"
+                app:layout_constraintTop_toBottomOf="@+id/t444"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t4444"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Image as Link"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="It is common to use images as links:"
+                app:layout_constraintTop_toBottomOf="@+id/t5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t55"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t5555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkImageEx"
+                app:layout_constraintTop_toBottomOf="@+id/t555"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t5555"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+
+                android:text="Link Titles"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element."
+                app:layout_constraintTop_toBottomOf="@+id/t6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkTitlesEx"
+                app:layout_constraintTop_toBottomOf="@+id/t66"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t666"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="External Paths"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="External pages can be referenced with a full URL or with a path relative to the current web page.&#x0A;
+
+This example uses a full URL to link to a web page:"
+                app:layout_constraintTop_toBottomOf="@+id/t7"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t777"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t77"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t7777"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkExternalEx"
+                app:layout_constraintTop_toBottomOf="@+id/t777"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t7777"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+               android:gravity="center"
+                android:text="Chapter Summary"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v7"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/linkSummary"
+                app:layout_constraintTop_toBottomOf="@+id/t8"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v8"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t88"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

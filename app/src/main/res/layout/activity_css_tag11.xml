@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag11">
+
+
+<TextView
+    android:id="@+id/vv1"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:text="position Property"
+    android:paddingTop="50dp"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="MissingConstraints" />
+
+<ScrollView
+    android:id="@+id/scrollV"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:scrollbars="vertical"
+    android:fitsSystemWindows="true"
+
+    app:layout_constraintTop_toBottomOf="@id/vv1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="The position Property"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="he position property specifies the type of positioning method used for an element.\n
+
+There are five different position values:\n
+
+- static\n
+- relative\n
+- fixed\n
+- absolute\n
+- sticky"
+            app:layout_constraintTop_toBottomOf="@+id/t1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t11"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="position: static;"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/v1"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="HTML elements are positioned static by default.\n
+
+Static positioned elements are not affected by the top, bottom, left, and right properties."
+            app:layout_constraintTop_toBottomOf="@+id/t2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t22"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t2222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/staticCssEx"
+            app:layout_constraintTop_toBottomOf="@+id/t222"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t2222"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="position: relative;"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/v2"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="An element with position: relative; is positioned relative to its normal position.\n
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element."
+            app:layout_constraintTop_toBottomOf="@+id/t3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t33"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t3333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/realtiveCssEx"
+            app:layout_constraintTop_toBottomOf="@+id/t333"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t3333"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="position: fixed;"
+            android:textSize="25sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/v3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.\n
+A fixed element does not leave a gap in the page where it would normally have been located."
+            app:layout_constraintTop_toBottomOf="@+id/t4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t44"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t4444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/fixedCssEx"
+            app:layout_constraintTop_toBottomOf="@+id/t444"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t4444"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:text="position: absolute;"
+            android:textSize="25sp"
+
+            app:layout_constraintTop_toBottomOf="@+id/v4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed)."
+            app:layout_constraintTop_toBottomOf="@+id/t5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t55"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t5555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/absoluteCssEx"
+            app:layout_constraintTop_toBottomOf="@+id/t555"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <View
+            android:id="@+id/v5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t5555"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/v5"
+            android:text="position: sticky;"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="An element with position: sticky; is positioned based on the user's scroll position.\n
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it 'sticks' in place (like position:fixed)."
+            app:layout_constraintTop_toBottomOf="@+id/t6"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t64"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t6666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/stickyCssEsx"
+
+            app:layout_constraintTop_toBottomOf="@+id/t666"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <View
+            android:id="@+id/v6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t6666"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/v6"
+            android:text="Overlapping Elements"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="3dp" />
+        <TextView
+            android:id="@+id/t77"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="When elements are positioned, they can overlap other elements.\n
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others)."
+            app:layout_constraintTop_toBottomOf="@+id/t7"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/teal"
+            android:text="Example"
+
+            app:layout_constraintTop_toBottomOf="@+id/t77"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+        <TextView
+            android:id="@+id/t7777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/overlappingCssEx"
+
+            app:layout_constraintTop_toBottomOf="@+id/t777"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp" />
+
+        <View
+            android:id="@+id/v7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/t7777"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

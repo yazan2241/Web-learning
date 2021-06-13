@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".htmlTag1"
+    android:background="@drawable/feed_background">
+
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:text="HTML Introduction"
+android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:text="What is HTML?"
+                android:textSize="25sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+
+
+            <TextView
+                android:id="@+id/t66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="8dp"
+                android:text="HTML is the standard markup language for creating Web pages &#x0A; &#x0A;
+- HTML stands for Hyper Text Markup Language&#x0A;
+- HTML describes the structure of Web pages using markup&#x0A;
+- HTML elements are the building blocks of HTML pages&#x0A;
+- HTML elements are represented by tags&#x0A;
+- HTML tags label pieces of content such as "
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t66"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+                android:text="A Simple HTML Document"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/t55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gradient1"
+
+                app:layout_constraintTop_toBottomOf="@+id/textView134"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ex"
+                app:layout_constraintTop_toBottomOf="@id/t55"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/im1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:text="HTML Tags"
+                android:textSize="25sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/im1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:text="HTML tags are element names surrounded by angle&#x0A;brackets:"
+                android:textSize="14sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/textView1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gray"
+
+                android:textSize="20sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/t1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+
+                android:textSize="14sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/t2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gradient1"
+                android:text="Tip: The start tag is also called the opening tag,&#x0A;and the end tag the closing tag."
+                android:textSize="14sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/t3"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/t4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="146dp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+
+                android:text="HTML Versions"
+                android:textSize="25sp"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintTop_toBottomOf="@id/t4"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+
+                android:text="Version                                                            Year \n
+            HTML                                                  1991\n
+            HTML 2.0                                           1995\n
+            HTML 3.2                                           1997\n
+            HTML 4.01                                         1999\n
+            XHTML                                                2000\n
+            HTML 5                                               2014
+
+"
+                android:textSize="14sp"
+app:layout_constraintBottom_toBottomOf="@+id/scrollV"
+                app:layout_constraintEnd_toEndOf="@+id/scrollV"
+                android:paddingBottom="180dp"
+                app:layout_constraintTop_toBottomOf="@id/t5"
+                tools:ignore="NotSibling" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag6">
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="CSS Fonts"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Font Families"
+                android:textSize="25sp"
+
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="In CSS, there are two types of font family names:\n
+
+- generic family - a group of font families with a similar look (like 'Serif'or 'Monospace')\n
+- font family - a specific font family (like 'Times New Roman' or 'Arial')"
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <LinearLayout
+                android:id="@+id/t12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/t11">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/red"
+                    android:text="Generic family"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/red"
+                    android:layout_marginRight="4dp"
+                    android:text="Font family"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Description"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/t13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/t12">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/green"
+                    android:layout_marginRight="4dp"
+                    android:text="Serif"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Times New Roman\n
+Georgia"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Serif fonts have small lines at the ends on some characters"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/t14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/t13">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/green"
+                    android:text="Sans-serif"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Arial\n
+Verdana"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="'Sans'' means without - these fonts do not have the lines at the ends of characters"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/t15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/t14">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Monospace"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Courier New\n
+Lucida Console"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="All monospace characters have the same width"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/t111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t15"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t1111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="p {\n
+    font-family: 'Times New Roman', Times, serif;\n
+}"
+                app:layout_constraintTop_toBottomOf="@+id/t111"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t1111"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Font Style"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The font-style property is mostly used to specify italic text.\n
+This property has three values:\n
+1- normal - The text is shown normally\n
+2- italic - The text is shown in italics\n
+3- oblique - The text is 'leaning' (oblique is very similar to italic, but less supported)"
+                app:layout_constraintTop_toBottomOf="@+id/t2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t22"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="p.normal {\n
+    font-style: normal;\n
+}\n
+
+p.italic {\n
+    font-style: italic;\n
+}\n
+
+p.oblique {\n
+    font-style: oblique;\n
+}
+"
+                app:layout_constraintTop_toBottomOf="@+id/t222"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t2222"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Font Size"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The font-size property sets the size of the text using px,em or percent.
+"
+                app:layout_constraintTop_toBottomOf="@+id/t3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t33"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="p {\n
+    font-size: 14px;\n
+}\n
+h1 {\n
+    font-size: 0.875em; /* 14px/16=0.875em */\n
+}\n
+body {\n
+    font-size: 100%;\n
+}
+"
+                app:layout_constraintTop_toBottomOf="@+id/t333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t3333"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

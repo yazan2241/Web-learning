@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag15">
+
+        <TextView
+            android:id="@+id/vv1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:text="CSS Forms"
+            android:paddingTop="50dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/scrollV"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:scrollbars="vertical"
+            android:fitsSystemWindows="true"
+
+            app:layout_constraintTop_toBottomOf="@id/vv1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/t12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="First Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name .."
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/border"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Last Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Last Name .."
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/border"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Country"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Syria"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Russia"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China"
+            />
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="USA"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="German"
+            />
+    </LinearLayout>
+</LinearLayout>
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Styling Input Fields"
+                    android:textSize="25sp"
+                  app:layout_constraintTop_toBottomOf="@+id/t12"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Use the width property to determine the width of the input field:"
+                    app:layout_constraintTop_toBottomOf="@+id/t1"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t11"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t1111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input {\n
+    width: 100%;\n
+}"
+                    app:layout_constraintTop_toBottomOf="@+id/t111"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t1111"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Padded Inputs"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v1"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Use the padding property to add space inside the text field."
+                    app:layout_constraintTop_toBottomOf="@+id/t2"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t22"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t2222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=text] {\n
+    width: 100%;\n
+    padding: 12px 20px;\n
+    margin: 8px 0;\n
+    box-sizing: border-box;\n
+}"
+                    app:layout_constraintTop_toBottomOf="@+id/t222"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t2222"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Bordered Inputs"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v2"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Use the border property to change the border size and color, and use the border-radius property to add rounded corners:"
+                    app:layout_constraintTop_toBottomOf="@+id/t3"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <TextView
+                    android:id="@+id/t333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+                    app:layout_constraintTop_toBottomOf="@+id/t33"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=text] {\n
+    border: 2px solid red;\n
+    border-radius: 4px;\n
+}"
+                    app:layout_constraintTop_toBottomOf="@+id/t333"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t3333"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Colored Inputs"
+                    android:textSize="25sp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/v3"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Use the background-color property to add a background color to the input, and the color property to change the text color:"
+                    app:layout_constraintTop_toBottomOf="@+id/t4"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t444"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t44"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t4444"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=text] {\n
+    background-color: #3CBC8D;\n
+    color: white;\n
+}"
+                    app:layout_constraintTop_toBottomOf="@+id/t444"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t4444"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Focused Inputs"
+                    android:textSize="25sp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/v4"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding outline: none; to the input.\n \n
+Use the :focus selector to do something with the input field when it gets focus:"
+                    app:layout_constraintTop_toBottomOf="@+id/t5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t555"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t55"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t5555"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=text]:focus {\n
+    background-color: lightblue;\n
+}"
+                    app:layout_constraintTop_toBottomOf="@+id/t555"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t5555"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/v5"
+                    android:text="Input with icon/image"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="If you want an icon inside the input, use the background-image property and position it with the background-position property.\n Also notice that we add a large left padding to reserve the space of the icon:"
+                    app:layout_constraintTop_toBottomOf="@+id/t6"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t64"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t6666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=text] {\n
+    background-color: white;\n
+    background-image: url('searchicon.png');\n
+    background-position: 10px 10px; \n
+    background-repeat: no-repeat;\n
+    padding-left: 40px;\n
+}"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t666"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t6666"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/v6"
+                    android:text="Styling Textareas"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Use the resize property to prevent textareas from being resized (disable the 'grabber' in the bottom right corner):"
+                    app:layout_constraintTop_toBottomOf="@+id/t7"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t777"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t77"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t7777"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="textarea {\n
+    width: 100%;\n
+    height: 150px;\n
+    padding: 12px 20px;\n
+    box-sizing: border-box;\n
+    border: 2px solid #ccc;\n
+    border-radius: 4px;\n
+    background-color: #f8f8f8;\n
+    resize: none;\n
+}"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t777"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v7"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t7777"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/v7"
+                    android:text="Styling Input Buttons"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <Button
+                    android:id="@+id/t88"
+                    app:layout_constraintTop_toBottomOf="@+id/t8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/green"
+                    android:textColor="@color/primaryWhite"/>
+                <TextView
+                    android:id="@+id/t888"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t88"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t8888"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="input[type=button], input[type=submit], input[type=reset] {\n
+    background-color: #4CAF50;\n
+    border: none;\n
+    color: white;\n
+    padding: 16px 32px;\n
+    text-decoration: none;\n
+    margin: 4px 2px;\n
+    cursor: pointer;\n
+}"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t888"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v8"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t8888"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

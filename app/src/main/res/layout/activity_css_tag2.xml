@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag2">
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="Insert CSS"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/t12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Three Ways to Insert CSS"
+                android:textSize="25sp"
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/gradient7"
+                app:layout_constraintTop_toBottomOf="@+id/t12"
+                android:text="- External style sheet&#x0A;
+- Internal style sheet&#x0A;
+- Inline style
+"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v12"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t13"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="External Style Sheet"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v12"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/externalStyleSheet"
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t1111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/externalCssEx"
+                app:layout_constraintTop_toBottomOf="@+id/t111"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="An external style sheet can be written in any text editor.\n The file should not contain any html tags.\n The style sheet file must be saved with a .css extension."
+                app:layout_constraintTop_toBottomOf="@+id/t1111"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t114"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t14"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t1114"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/externalCssFileEX"
+                app:layout_constraintTop_toBottomOf="@+id/t114"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t1114"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Internal Style Sheet"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/internalCSS"
+                app:layout_constraintTop_toBottomOf="@+id/t2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t22"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/inlineCSSEx"
+                app:layout_constraintTop_toBottomOf="@+id/t222"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t2222"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gradient7"
+                android:text="Inline Styles"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="An inline style may be used to apply a unique style for a single element. \n
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property."
+                app:layout_constraintTop_toBottomOf="@+id/t3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t33"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/inlineCssEx"
+                app:layout_constraintTop_toBottomOf="@+id/t333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t3333"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gradient7"
+                android:text="Cascading Order"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="What style will be used when there is more than one style specified for an HTML element?
+\n 1- Inline style (inside an HTML element)
+\n 2- External and internal style sheets (in the head section)
+\n 3- Browser default"
+                app:layout_constraintTop_toBottomOf="@+id/t4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t44"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

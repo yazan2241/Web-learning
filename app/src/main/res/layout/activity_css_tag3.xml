@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag3">
+
+
+        <TextView
+            android:id="@+id/vv1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:text="CSS Backgrounds"
+            android:paddingTop="50dp"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/scrollV"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:scrollbars="vertical"
+            android:fitsSystemWindows="true"
+
+            app:layout_constraintTop_toBottomOf="@id/vv1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Background Color"
+                    android:textSize="25sp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/v12"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="The background-color property specifies the background color of an element."
+                    app:layout_constraintTop_toBottomOf="@+id/t1"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t11"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t1111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/backgroundColorCssEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t111"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="With CSS, a color is most often specified by:\n
+a valid color name - like 'red'\n
+a HEX value - like '#ff0000'\n
+an RGB value - like 'rgb(255,0,0)'"
+                    app:layout_constraintTop_toBottomOf="@+id/t1111"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t14"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Background Image"
+                    android:textSize="25sp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/v1"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="The background-image property specifies an image to use as the background of an element."
+                    app:layout_constraintTop_toBottomOf="@+id/t2"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t22"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t2222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/backgroundImageCssEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t222"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t2222"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Background Image Propirities"
+                    android:textSize="20sp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/v2"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="By default, the background-image property repeats an image both horizontally and vertically.\n
+
+Some images should be repeated only horizontally or vertically"
+                    app:layout_constraintTop_toBottomOf="@+id/t3"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t33"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t3333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/repeateImageHorizontalEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t333"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t3333"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Shorthand property"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v3"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="To shorten the code, it is also possible to specify all the background properties in one single property."
+                    app:layout_constraintTop_toBottomOf="@+id/t4"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t444"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t44"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t4444"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/backgroundImageShortlyCssEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t444"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t4444"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="CSS Borders"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v4"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="101dp"
+                    tools:layout_editor_absoluteY="3dp" />
+                <TextView
+                    android:id="@+id/t55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/cssBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/t5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t55"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/green"
+                    android:text="Border Width"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="The border-width property specifies the width of the four borders.\n
+
+The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick."
+                    app:layout_constraintTop_toBottomOf="@+id/t6"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v67"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t66"
+                    tools:ignore="MissingConstraints" />
+
+
+
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Border Color"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v67"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="The border-color property is used to set the color of the four borders."
+                    app:layout_constraintTop_toBottomOf="@+id/t7"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t77"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t6666"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/borderCssEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t666"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <View
+                    android:id="@+id/v6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t6666"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/t8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:text="Shorthand Property"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/v6"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="The border property is a shorthand property for the following individual border properties:\n
+
+border-width\n
+border-style (required)\n
+border-color\n"
+                    app:layout_constraintTop_toBottomOf="@+id/t8"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t888"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/teal"
+                    android:text="Example"
+
+                    app:layout_constraintTop_toBottomOf="@+id/t88"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+                <TextView
+                    android:id="@+id/t8888"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/borderShortenCssEx"
+                    app:layout_constraintTop_toBottomOf="@+id/t888"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="4dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/t4445"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="@drawable/border_red"
+                    app:layout_constraintTop_toBottomOf="@+id/t8888">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World"/>
+                </LinearLayout>
+                <View
+                    android:id="@+id/v8"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@+id/t4445"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

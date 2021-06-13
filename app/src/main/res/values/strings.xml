@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Web Learning</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_login">Log in</string>
+    <string name="menu_logout">Log out</string>
+    <string name="login_label">Log In</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="send_text">Send</string>
+    <string name="lorem">Lorem ipsum dolor sit amet</string>
+    <string name="title_sign_in">Welcome</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hint_password">••••••</string>
+    <string name="hint_email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="heading_recent">Recent</string>
+    <string name="heading_my_posts">My Posts</string>
+    <string name="heading_my_top_posts">My Top Posts</string>
+    <string name="driver_post_button_title">Offer New Carpool</string>
+    <string name="rider_post_button_title">Request New Carpool</string>
+    <string name="driver_feed_title">Ride Requests</string>
+    <string name="rider_feed_title">Drive Offers</string>
+    <string name="post_label_from">From</string>
+    <string name="post_label_to">To</string>
+    <string name="post_label_passengerCount">Maximum Passengers</string>
+    <string name="post_label_pickupPoint">Pickup Point</string>
+    <string name="heading_recent_organizations">All Organizations</string>
+    <string name="heading_my_organizations">My Organizations</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_map_detail">MapDetailActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_carpool_detail">CarpoolDetailActivity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro">hello there&#x0A;
+start learning web basics</string>
+    <string name="title_activity_new_carpool">NewCarpoolActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="infoprompt">Select One of the Following:</string>
+    <string name="enter_info">Enter Your Information</string>
+    <string name="info_first">First Name</string>
+    <string name="info_last">Last Name</string>
+    <string name="info_date">Date of Birth</string>
+    <string name="info_phone">(555)555-555</string>
+    <string name="info_choose_info">Choose Your Default Organization</string>
+    <string name="info_save">Save Information</string>
+    <string name="info_skip">Skip This</string>
+    <string name="organizations_prompt">Choose an Organization</string>
+    <string name="info_join_an_organization">Join an Organization</string>
+
+    <string-array name="organizations_list">
+        <item>San Jose State University</item>
+        <item>DeAnza College</item>
+        <item>West Valley College</item>
+    </string-array>
+    <string name="title_activity_profile_page">ProfilePageActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="appbar_scrolling_view_behavior">scrool view</string>
+    <string name="attr_sum">- All HTML elements can have attributes&#x0A; - The title attribute provides additional tool-tip information&#x0A; - The href attribute provides address information for links&#x0A; - The width and height attributes provide size information for images&#x0A; - The alt attribute provides text for screen readers&#x0A; - At W3Schools we always use lowercase attribute names&#x0A; - At W3Schools we always quote attribute values with double quotes</string>
+    <string name="style"><![CDATA[HTML images are defined with the <img> tag. \nThe filename of the image source is specified in the src attribute:]]></string>
+    <string name="alt"><![CDATA[Here, a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:]]></string>
+    <string name="href"><![CDATA[<a href=www.google.com>This is a link</a>]]></string>
+    <string name="src"><![CDATA[<img src=\'img_girl.jpg\'>]]></string>
+    <string name="alt1"><![CDATA[<img src=\'img_girl.jpg\' alt=\'Girl with a jacket\'>]]></string>
+    <string name="width"><![CDATA[<img src=\'img_girl.jpg\' width=\'500\' height=\'600\'>]]></string>
+    <string name="style1"><![CDATA[<p style=\'color:red\'>I am a paragraph</p>]]></string>
+    <string name="title"><![CDATA[<p title=\'I\'m a tooltip\'> This is a paragraph. </p>]]></string>
+    <string name="parag"><![CDATA[The HTML <p> element defines a paragraph:]]></string>
+    <string name="paragraphEx"><![CDATA[<p>This is a paragraph.</p>\n <p>This is another paragraph.</p>]]></string>
+    <string name="br"><![CDATA[The HTML <br> element defines a line break.]]></string>
+    <string name="brEx"><![CDATA[<p>This is<br>a paragraph<br>with line breaks.</p>]]></string>
+    <string name="pre"><![CDATA[The HTML <pre> Element]]></string>
+    <string name="preEl"><![CDATA[The HTML <pre> element defines preformatted text.]]></string>
+    <string name="preEx"><![CDATA[<pre> My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me. </pre>]]></string>
+    <string name="styleSyntax"><![CDATA[<tagname style=\'property:value;\'>]]></string>
+    <string name="backgroundColor"><![CDATA[<body style=\'background-color:powderblue;\'>\n <h1>This is a heading</h1>\n <p>This is a paragraph.</p> </body>]]></string>
+    <string name="textColorEx"><![CDATA[<h1 style=\'color:blue;\'>This is a heading</h1>\n <p style=\'color:red;\'>This is a paragraph.</p>]]></string>
+    <string name="fontEx"><![CDATA[<h1 style=\'font-family:verdana;\'>This is a heading</h1> \n<p style=\'font-family:courier;\'>This is a paragraph.</p>]]></string>
+    <string name="fontSizeEx"><![CDATA[<h1 style=\'text-align:center;\'>Centered Heading</h1>\n <p style=\'text-align:center;\'>Centered paragraph.</p>]]></string>
+    <string name="styleSummury">-Use the style attribute for styling HTML elements&#x0A; -Use background-color for background color&#x0A; -Use color for text colors&#x0A; -Use font-family for text fonts&#x0A; -Use font-size for text sizes&#x0A; -Use text-align for text alignment&#x0A;</string>
+    <string name="backgroundColorEx"><![CDATA[<h1 style=\'background-color:DodgerBlue;\'>Hello World</h1>\n <p style=\'background-color:Tomato;\'>Lorem ipsum...</p>]]></string>
+    <string name="textColorrEx"><![CDATA[<h1 style=\'color:Tomato;\'>Hello World</h1>\n <p style=\'color:DodgerBlue;\'>Lorem ipsum...</p> <p style=\'color:MediumSeaGreen;\'>Ut wisi enim...</p>]]></string>
+    <string name="borderColorEx"><![CDATA[<h1 style=\'border:2px solid Tomato;\'>Hello World</h1>\n <h1 style=\'border:2px solid DodgerBlue;\'>Hello World</h1>\n <h1 style=\'border:2px solid Violet;\'>Hello World</h1>]]></string>
+    <string name="hyperLinkEx"><![CDATA[<a href=\'url\'>link text</a>]]></string>
+    <string name="localLinkEx"><![CDATA[<a href=\'html_images.asp\'>HTML Images</a>]]></string>
+    <string name="colorLinkEx"><![CDATA[<style>\n a:link {\n color: green;\n background-color: transparent;\n text-decoration: none;\n } \n a:visited {\n color: pink;&#x0A; background-color: transparent;&#x0A; text-decoration: none;&#x0A; } &#x0A;a:hover { &#x0A;color: red;&#x0A; background-color: transparent;&#x0A; text-decoration: underline;&#x0A; }&#x0A; a:active {&#x0A; color: yellow;&#x0A; background-color: transparent;&#x0A; text-decoration: underline;&#x0A; }&#x0A; </style>]]></string>
+    <string name="linkTarget">The target attribute specifies where to open the linked document.&#x0A; The target attribute can have one of the following values:&#x0A;_blank - Opens the linked document in a new window or tab &#x0A;_self - Opens the linked document in the same window/tab as it was clicked (this is default) &#x0A;_parent - Opens the linked document in the parent frame &#x0A;_top - Opens the linked document in the full body of the window &#x0A;framename - Opens the linked document in a named frame &#x0A;This example will open the linked document in a new browser window/tab:</string>
+    <string name="linkTargetEx"><![CDATA[<a href=\'https://www.w3schools.com/\' target=\'_blank\'>Visit W3Schools!</a>]]></string>
+    <string name="linkImageEx"><![CDATA[<a href=\'default.asp\'>\n <img src=\'smiley.gif\' alt=\'HTML tutorial\' style=\'width:42px;height:42px;border:0;\'> \n</a>]]></string>
+    <string name="linkTitlesEx"><![CDATA[<a href=\'https://www.w3schools.com/html/\' title=\'Go to W3Schools HTML section\'>Visit our HTML Tutorial</a>]]></string>
+    <string name="linkExternalEx"><![CDATA[<a href=\'https://www.w3schools.com/html/default.asp\'>HTML tutorial</a>]]></string>
+    <string name="linkSummary"><![CDATA[- Use the <a> element to define a link \n - Use the href attribute to define the link address \n - Use the target attribute to define where to open the linked document \n - Use the <img> element (inside <a>) to use an image as a link&#x0A;- ]]></string>
+    <string name="imgEx"><![CDATA[<img src=\'pic_trulli.jpg\' alt=\'Italian Trulli\'>]]></string>
+    <string name="imageSyntax"><![CDATA[In HTML, images are defined with the <img> tag.&#x0A;&#x0A; The <img> tag is empty, it contains attributes only, and does not have a closing tag.&#x0A;&#x0A; The src attribute specifies the URL (web address) of the image:]]></string>
+    <string name="imageTagEx"><![CDATA[<img src=\'url\'>]]></string>
+    <string name="altTagEx"><![CDATA[<img src=\'img_chania.jpg\' alt=\'Flowers in Chania\'>]]></string>
+    <string name="imageSizeEx"><![CDATA[<img src=\'img_girl.jpg\' alt=\'Girl in a jacket\' style=\'width:500px;height:600px;\'>]]></string>
+    <string name="imageSubFolder"><![CDATA[<img src=\'/images/html5.gif\' alt=\'HTML5 Icon\' style=\'width:128px;height:128px;\'>]]></string>
+    <string name="imageAsLink"><![CDATA[To use an image as a link, put the <img> tag inside the <a> tag:]]></string>
+    <string name="imageAsLinkEx"><![CDATA[<a href=\'default.asp\'>&#x0A; <img src=\'smiley.gif\' alt=\'HTML tutorial\' style=\'width:42px;height:42px;border:0;\'> &#x0A;</a>]]></string>
+    <string name="imageFloatEx"><![CDATA[<p>&#x0A;<img src=\'smiley.gif\' alt=\'Smiley face\' style=\'float:right;width:42px;height:42px;\'> The image will float to the right of the text.</p>&#x0A; <p>&#x0A;<img src=\'smiley.gif\' alt=\'Smiley face\' style=\'float:left;width:42px;height:42px;\'> The image will float to the left of the text.</p>]]></string>
+    <string name="backgroundImageEx"><![CDATA[<body style=\'background-image:url(\'clouds.jpg\')\'> &#x0A;<h2>Background Image</h2>&#x0A; </body>]]></string>
+    <string name="ImageSummary"><![CDATA[- Use the HTML <img> element to define an image&#x0A;- Use the HTML src attribute to define the URL of the image&#x0A;- Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed&#x0A;- Use the HTML width and height attributes to define the size of the image&#x0A;- Use the CSS width and height properties to define the size of the image (alternatively)&#x0A;- Use the CSS float property to let the image float&#x0A;- Use the HTML <map> element to define an image-map&#x0A;- Use the HTML <area> element to define the clickable areas in the image-map&#x0A;- Use the HTML <img>\'s element usemap attribute to point to an image-map&#x0A;- Use the HTML <picture> element to show different images for different devices]]></string>
+    <string name="elementSelector"><![CDATA[The element selector selects elements based on the element name.\n You can select all <p> elements on a page]]></string>
+    <string name="elementSelectorEx">p { text-align: center; color: red; }</string>
+    <string name="idSelectorEx">#para1 { text-align: center; color: red; }</string>
+    <string name="classSeclectorEx">.center { text-align: center; color: red; }</string>
+    <string name="groubSelectorEx">h1, h2, p { text-align: center; color: red; }</string>
+    <string name="externalStyleSheet"><![CDATA[insert external style sheet file inside the <link> element.\nThe <link> element goes inside the <head> section\nAn external style sheet can be written in any text editor ]]></string>
+    <string name="externalCssEx"><![CDATA[<head> \n <link rel=\'stylesheet\' type=\'text/css\' href=\'mystyle.css\'>\n </head>]]></string>
+    <string name="externalCssFileEX">body {\n background-color: lightblue; \n}\n h1 {\n color: navy;\n margin-left: 20px; \n }</string>
+    <string name="internalCSS"><![CDATA[An internal style sheet may be used if one single page has a unique style. \n Internal styles are defined within the <style> element, inside the <head> section of an HTML page:]]></string>
+    <string name="inlineCSSEx"><![CDATA[<head> \n <style>\n body {\n background-color: linen;\n } \n h1 {\n color: maroon; \n margin-left: 40px; \n } \n </style> \n </head>]]></string>
+    <string name="inlineCssEx"><![CDATA[<h1 style=\'color:blue;margin-left:30px;\'>This is a heading</h1>]]></string>
+    <string name="backgroundColorCssEx">body {\n background-color: lightblue;\n }</string>
+    <string name="backgroundImageCssEx">body {\n background-image: url(\'paper.gif\'); \n}</string>
+    <string name="repeateImageHorizontalEx">1- Repeat Horizontally or Vertically \n body\n {\n background-image: url(\'gradient_bg.png\');\n background-repeat: repeat-x; \n}\n 2- Set position and no-repeat \n body\n {\n
+    background-image: url("img_tree.png");\n
+     background-repeat: no-repeat;\n
+    background-position: right top;\n
+}\n
+    3- Fixed position\n
+    body\n {\n
+    background-image: url("img_tree.png");\n
+    background-repeat: no-repeat;\n
+    background-position: right top;\n
+    background-attachment: fixed;\n
+}\n
+    </string>
+    <string name="backgroundImageShortlyCssEx">body {\n background: #ffffff url(\'img_tree.png\') no-repeat right top; \n}</string>
+    <string name="borderCssEx">p {\n border-style: solid;\n border-width: 5px; \n border-color: red; \n}</string>
+    <string name="borderShortenCssEx">p {\n border: 5px solid red; \n}</string>
+    <string name="marginPadding"><![CDATA[Margins & Padding]]></string>
+    <string name="marginEx">p {\n margin-top: 100px;\n margin-bottom: 100px;\n margin-right: 150px;\n margin-left: 80px;\n we can write it shortly :\n p {\n
+   \n margin: 25px 50px 75px 100px;\n
+} \n}</string>
+    <string name="paddingEx">div {\n padding-top: 50px;\n padding-right: 30px;\n padding-bottom: 50px;\n padding-left: 80px;\n }\n we can write it shortly : \n div {\n
+    padding: 25px 50px 75px 100px;\n
+}</string>
+    <string name="heightWidthEx">div {\n height: 200px;\n width: 50%;\n background-color: powderblue;\n }</string>
+    <string name="maxWidthEx">div {\n max-width: 500px;\n height: 100px;\n background-color: powderblue;\n }</string>
+    <string name="textLink1"><u>Text link</u></string>
+    <string name="finalQuiz"><u>Start Final Quiz</u></string>
+    <string name="linkStyle">Links can be styled with any CSS property (e.g. color, font-family, background, etc.).\n In addition, links can be styled differently depending on what state they are in.\n The four links states are:\n a:link -  a normal, unvisited link\n a:visited - a link the user has visited\n a:hover - a link when the user mouses over it\n a:active - a link the moment it is clicked\n</string>
+    <string name="styleLinksEx">/* unvisited link */\n a:link {\n color: red;\n }\n /* visited link */\n a:visited {\n color: green;\n }\n /* mouse over link */\n a:hover {\n color: hotpink;\n }\n /* selected link */\n a:active {\n color: blue;\n }</string>
+    <string name="backGroundcolorLinkEx">a:link {\n background-color: yellow;\n }\n a:visited {\n background-color: cyan;\n }\n a:hover {\n background-color: lightgreen;\n }\n a:active {\n background-color: hotpink;\n }</string>
+    <string name="ul"><ul>Coffee</ul>\n <ul>Tea</ul>\n <ul>Coca Cola</ul></string>
+    <string name="ol"><ol>Coffee</ol>\n <ol>Tea</ol>\n <ol>Coca Cola</ol></string>
+    <string name="listCss"><![CDATA[In HTML, there are two main types of lists:\n - unordered lists (<ul>) - the list items are marked with bullets\n - ordered lists (<ol>) - the list items are marked with numbers or letters\n The CSS list properties allow you to:\n - Set different list item markers for ordered lists\n - Set different list item markers for unordered lists\n - Set an image as the list item marker\n - Add background colors to lists and list items\n]]></string>
+    <string name="lsitCssEx">ul.a {\n list-style-type: circle;\n }\n ul.b {\n list-style-type: square;\n }\n ol.c {\n list-style-type: upper-roman;\n }\n ol.d {\n list-style-type: lower-alpha;\n }</string>
+    <string name="positionListMarke">ul.a {\n list-style-position: outside;\n }\n ul.b {\n list-style-position: inside;\n }</string>
+    <string name="listColorStyling">ol {\n background: #ff9999;\n padding: 20px;\n }\n ul {\n background: #3399ff;\n padding: 20px;\n }\n ol li {\n background: #ffe5e5;\n padding: 5px;\n margin-left: 35px;\n }\n ul li {\n background: #cce5ff;\n margin: 5px;\n }</string>
+    <string name="tableBorderCss"><![CDATA[To specify table borders in CSS, use the border property.\n The example below specifies a black border for <table>, <th>, and <td> elements:]]></string>
+    <string name="tableBorderCssEx">table, th, td {\n border: 1px solid black;\n }</string>
+    <string name="collapseTableCssEx">table {\n border-collapse: collapse;\n }\n table, th, td {\n border: 1px solid black;\n }</string>
+    <string name="tableWidthHeightEx">table {\n width: 100%;\n }\n th {\n height: 50px;\n }</string>
+    <string name="textAlignmentEx">th {\n text-align: left;\n }</string>
+    <string name="werticalAlignmentEx">td {\n height: 50px;\n vertical-align: bottom;\n }</string>
+    <string name="tablePadding"><![CDATA[To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:]]></string>
+    <string name="tablePaddingEx">th, td {\n padding: 15px;\n text-align: left;\n }</string>
+    <string name="tableColor"><![CDATA[The example below specifies the background color and text color of <th> elements:]]></string>
+    <string name="tableColorEx">th {\n background-color: #4CAF50;\n color: white;\n }</string>
+    <string name="blockLevel"><![CDATA[A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).\n The <div> element is a block-level element.\n Examples of block-level elements:\n <div>\n <h1> - <h6>\n <p>\n <form>\n <header>\n <footer>\n <section>]]></string>
+    <string name="inlineElement"><![CDATA[An inline element does not start on a new line and only takes up as much width as necessary.\n This is an inline <span> element inside a paragraph.\n Examples of inline elements:\n <span>\n <a>\n <img>]]></string>
+    <string name="displayNone"><![CDATA[display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them.\n Take a look at our last example on this page if you want to know how this can be achieved.\n The <script> element uses display: none; as default.]]></string>
+    <string name="displayEx">span {\n display: block;\n }\n li {\n display: inline;\n }</string>
+    <string name="hideCssEx">h1.hidden {\n display: none;\n }\n h2.hidden {\n
+    visibility: hidden;\n
+}</string>
+    <string name="staticCssEx">div.static {\n position: static;\n border: 3px solid #73AD21;\n }</string>
+    <string name="realtiveCssEx">div.relative {\n position: relative;\n left: 30px;\n border: 3px solid #73AD21;\n }</string>
+    <string name="fixedCssEx">div.fixed {\n position: fixed;\n bottom: 0;\n right: 0;\n width: 300px;\n border: 3px solid #73AD21;\n }</string>
+    <string name="absoluteCssEx">div.absolute {\n position: absolute;\n top: 80px;\n right: 0;\n width: 200px;\n height: 100px;\n border: 3px solid #73AD21;\n }</string>
+    <string name="stickyCssEsx">div.sticky {\n position: -webkit-sticky; /* Safari */\n position: sticky;\n top: 0;\n background-color: green;\n border: 2px solid #4CAF50;\n }</string>
+    <string name="overlappingCssEx">img {\n position: absolute;\n left: 0px;\n top: 0px;\n z-index: -1;\n }</string>
+    <string name="horizontalVerticalAlign"><![CDATA[Horizontal & Vertical Align]]></string>
+    <string name="centerAlign"><![CDATA[To horizontally center a block element (like <div>), use margin: auto;\n Setting the width of the element will prevent it from stretching out to the edges of its container.]]></string>
+    <string name="centerAlignEx">.center {\n margin: auto;\n width: 50%;\n border: 3px solid green;\n padding: 10px;\n }</string>
+    <string name="positionAlignCssEx">.right {\n position: absolute;\n right: 0px;\n width: 300px;\n border: 3px solid #73AD21;\n padding: 10px;\n }</string>
+    <string name="centerAlignUsingpaddingEx">.center {\n padding: 70px 0;\n border: 3px solid green;\n }</string>
+    <string name="sttributeCss"><![CDATA[The [attribute] selector is used to select elements with a specified attribute.\n The following example selects all <a> elements with a target attribute:]]></string>
+    <string name="attributeCssEx">a[target] {\n background-color: yellow;\n }</string>
+    <string name="attributeValueCss"><![CDATA[The [attribute=\'value\'] selector is used to select elements with a specified attribute and value.\n The following example selects all <a> elements with a target=\'_blank\' attribute:]]></string>
+    <string name="attributeBlankEx">a[target=\'_blank\'] { \n background-color: yellow;\n }</string>
+    <string name="attributeeValueCss">[title~=\'flower\'] { border: 5px solid yellow; }</string>
+    <string name="classSclectorCssEx">[class|=\'top\'] { background: yellow; }</string>
+    <string name="styleFormCssEx">input[type=\'text\'] {\n width: 150px;\n display: block;\n margin-bottom: 10px;\n background-color: yellow;\n }\n input[type=\'button\'] {\n width: 120px;\n margin-left: 35px;\n display: block;\n }</string>
+    <string name="tableWidthHeight"><![CDATA[Width and height of a table are defined by the width and height properties.\n The example below sets the width of the table to 100%, and the height of the <th> elements to 50px:]]></string>
+    <string name="removeDefaultSetting"><![CDATA[The list-style-type:none property can also be used to remove the markers/bullets.\n Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:]]></string>
+    <string name="collapseCss"><![CDATA[The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.\n By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.]]></string>
+    <string name="listItemMarkerCss"><![CDATA[Anything added to the <ol> or <ul> tag, affects the entire list,\n while properties added to the <li> tag will affect the individual list items:]]></string>
+    <string name="leftTextAlign"><![CDATA[The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.\n By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements).]]></string>
+    <string name="cssBorder">The border-style property specifies what kind of border to display.\n The following values are allowed:\n\n 1- dotted - Defines a dotted border\n 2- dashed - Defines a dashed border\n 3- solid - Defines a solid border\n 4- double - Defines a double border\n 5- groove - Defines a 3D grooved border. The effect depends on the border-color value\n 6- ridge - Defines a 3D ridged border. The effect depends on the border-color value\n 7- inset - Defines a 3D inset border. The effect depends on the border-color value\n 8- outset - Defines a 3D outset border. The effect depends on the border-color value\n 9- none - Defines no border\n 10- hidden - Defines a hidden border\n</string>
+</resources>

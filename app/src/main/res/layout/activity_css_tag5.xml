@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feed_background"
+    tools:context=".css_tag5">
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="@string/marginPadding"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Text Color"
+                android:textSize="25sp"
+
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The color property is used to set the color of the text. The color is specified by:\n
+a color name - like 'red'\n
+a HEX value - like '#ff0000'\n
+an RGB value - like 'rgb(255,0,0)'"
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t1111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="body {\n
+    color: blue;\n
+}"
+                app:layout_constraintTop_toBottomOf="@+id/t111"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t1111"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Text Alignment"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The text-align property is used to set the horizontal alignment of a text.\n
+
+A text can be left or right aligned, centered, or justified.\n
+When the text-align property is set to 'justify', each line is stretched so that every line has equal width, and the left and right margins are straight"
+                app:layout_constraintTop_toBottomOf="@+id/t2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t22"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="h1 {\n
+    text-align: center;\n
+}
+"
+                app:layout_constraintTop_toBottomOf="@+id/t222"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t2222"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Text Decoration"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The text-decoration property is used to set or remove decorations from text.\n
+The value text-decoration: none; is often used to remove underlines from links:\n
+"
+                app:layout_constraintTop_toBottomOf="@+id/t3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t33"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="h1 {\n
+    text-decoration: overline;\n
+}\n
+
+h2 {\n
+    text-decoration: line-through;\n
+}\n
+
+h3 {\n
+    text-decoration: underline;\n
+}"
+                app:layout_constraintTop_toBottomOf="@+id/t333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t3333"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:text="Text Transformation"
+                android:textSize="25sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/v3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The text-transform property is used to specify uppercase and lowercase letters in a text."
+                app:layout_constraintTop_toBottomOf="@+id/t4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t44"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="p.uppercase {\n
+    text-transform: uppercase;\n
+}\n
+
+p.lowercase {\n
+    text-transform: lowercase;\n
+}\n
+
+p.capitalize {\n
+    text-transform: capitalize;\n
+}"
+                app:layout_constraintTop_toBottomOf="@+id/t444"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t4444"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/v4"
+                android:text="Text Direction"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The direction property is used to change the text direction of an element:"
+                app:layout_constraintTop_toBottomOf="@+id/t5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t55"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t5555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="p {\n
+    direction: rtl;\n
+}"
+
+                app:layout_constraintTop_toBottomOf="@+id/t555"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t5555"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/v5"
+                android:text="Text Shadow"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="The text-shadow property adds shadow to text.\n
+
+The following example specifies the position of the horizontal shadow (3px), the position of the vertical shadow (2px) and the color of the shadow (red):"
+                app:layout_constraintTop_toBottomOf="@+id/t6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t64"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t6666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="h1 {\n
+    text-shadow: 3px 2px red;\n
+}"
+
+                app:layout_constraintTop_toBottomOf="@+id/t666"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t6666"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

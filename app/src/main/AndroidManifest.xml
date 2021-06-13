@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity android:name=".finalResult"></activity>
+        <activity android:name=".finalQuiz" />
+        <activity android:name=".CSS" />
+        <activity android:name=".css_tag15" />
+        <activity android:name=".css_tag14" />
+        <activity android:name=".css_tag13" />
+        <activity android:name=".css_tag12" />
+        <activity android:name=".css_tag11" />
+        <activity android:name=".css_tag10" />
+        <activity android:name=".css_tag9" />
+        <activity android:name=".css_tag8" />
+        <activity android:name=".css_tag7" />
+        <activity android:name=".css_tag6" />
+        <activity android:name=".css_tag5" />
+        <activity android:name=".css_tag4" />
+        <activity android:name=".css_tag3" />
+        <activity android:name=".signUp" />
+        <activity android:name=".logInBaby" />
+        <activity android:name=".css_tag2" />
+        <activity android:name=".css_tag1" />
+        <activity android:name=".html_tag11" />
+        <activity android:name=".html_tag10" />
+        <activity android:name=".html_tag8" />
+        <activity android:name=".html_tag6" />
+        <activity android:name=".html_tag5" />
+        <activity android:name=".html_tag3" />
+        <activity android:name=".quiz" />
+        <activity android:name=".htmlTag1" />
+        <activity android:name=".HTML" />
+        <activity android:name=".levels" />
+        <activity android:name=".webTemplate" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".ResultActivity" />
+    </application>
+
+</manifest>

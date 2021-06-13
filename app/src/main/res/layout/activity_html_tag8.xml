@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".html_tag8"
+    android:background="@drawable/feed_background">
+    <TextView
+        android:id="@+id/vv1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="HTML Colors"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintTop_toBottomOf="@id/vv1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values."
+
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:layout_margin="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/colorAccent"
+                android:text="Color Names"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/t1"
+                tools:ignore="MissingConstraints"
+              />
+            <Button
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+                android:id="@+id/red1"
+            android:text="Tomato"
+            android:textColor="@color/primaryWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t11"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+            android:background="@color/gradient0"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/orange1"
+                android:text="Orange"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/red1"
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gradient1"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/blue"
+                android:text="DodgerBlue"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/orange1"
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gradient2"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/green"
+                android:text="MediumSeaGreen"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/blue"
+                app:layout_constraintTop_toBottomOf="@+id/t11"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gradient4"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/gray1"
+                android:text="Gray"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/red1"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/waypointColor"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/purble"
+                android:text="SlateBlue"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/gray1"
+                app:layout_constraintTop_toBottomOf="@+id/orange1"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gradient5"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/bink"
+                android:text="Violet"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/purble"
+                app:layout_constraintTop_toBottomOf="@+id/blue"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gradient3"/>
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:id="@+id/lgray"
+                android:text="LightGray"
+                android:textColor="@color/primaryWhite"
+                app:layout_constraintLeft_toRightOf="@+id/bink"
+                app:layout_constraintTop_toBottomOf="@+id/green"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Background Color"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/gray1"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="16dp"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="You can set the background color for HTML elements:"
+                app:layout_constraintTop_toBottomOf="@+id/t2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t22"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t2222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/backgroundColorEx"
+                app:layout_constraintTop_toBottomOf="@+id/t222"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t2222"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Text Color"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="You can set the color of text:"
+                app:layout_constraintTop_toBottomOf="@+id/t3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t33"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/textColorrEx"
+                app:layout_constraintTop_toBottomOf="@+id/t333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <TextView
+                android:id="@+id/t3334"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Hello World"
+                android:textColor="@color/primaryWhite"
+                android:background="@color/gradient0"
+                app:layout_constraintTop_toBottomOf="@+id/t3333"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3335"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/primaryWhite"
+                android:text="Lorem ipsum..."
+                android:background="@color/gradient2"
+                app:layout_constraintTop_toBottomOf="@+id/t3334"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t3336"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gradient4"
+                android:textColor="@color/primaryWhite"
+                android:text="Ut wisi enim..."
+                app:layout_constraintTop_toBottomOf="@+id/t3335"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <View
+                android:id="@+id/v3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t3336"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Border Color"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="You can set the color of borders:"
+                app:layout_constraintTop_toBottomOf="@+id/t4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="Example"
+
+                app:layout_constraintTop_toBottomOf="@+id/t44"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t4444"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/borderColorEx"
+                app:layout_constraintTop_toBottomOf="@+id/t444"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <LinearLayout
+                android:id="@+id/t4445"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/border_red"
+                app:layout_constraintTop_toBottomOf="@+id/t4444">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/t4446"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/border_blue"
+                app:layout_constraintTop_toBottomOf="@+id/t4445">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/t4447"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/border_purple"
+                app:layout_constraintTop_toBottomOf="@+id/t4446">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/v4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t4447"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Color Values"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v4"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp" />
+            <TextView
+                android:id="@+id/t55"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:"
+                app:layout_constraintTop_toBottomOf="@+id/t5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+
+            <TextView
+                android:id="@+id/t5555"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/gradient0"
+                android:textColor="@color/primaryWhite"
+                android:gravity="center"
+                tools:layout_editor_absoluteX="101dp"
+                tools:layout_editor_absoluteY="3dp"
+                android:text="rgb(255, 99, 71)&#x0A;
+#ff6347&#x0A;
+hsl(9, 100%, 64%)"
+                app:layout_constraintTop_toBottomOf="@+id/t55"
+                tools:ignore="MissingConstraints"
+                />
+            <View
+                android:id="@+id/v5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t5555"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/teal"
+                android:text="RGB Value"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/v5"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <TextView
+                android:id="@+id/t66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="- In HTML, a color can be specified as an RGB value, using this formula:&#x0A;
+
+- rgb(red, green, blue)&#x0A;
+
+- Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.&#x0A;
+
+- For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.&#x0A;
+
+- To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).&#x0A;
+
+- To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255)."
+                app:layout_constraintTop_toBottomOf="@+id/t6"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp" />
+            <View
+                android:id="@+id/v6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@+id/t66"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
